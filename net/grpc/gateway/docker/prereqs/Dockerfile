@@ -49,7 +49,7 @@ RUN ./scripts/init_submodules.sh
 ######################################
 # Stage 2: Copy source files and build
 ######################################
-FROM node:20.0.0-bullseye AS copy-and-build
+FROM node:20.20.1-bullseye AS copy-and-build
 
 ARG MAKEFLAGS=-j8
 ARG BAZEL_VERSION=7.3.0
